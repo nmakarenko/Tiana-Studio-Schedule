@@ -5,4 +5,9 @@
     <string name="menu_day_schedule">Day schedule</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
+    <string name="day_schedule_title">Day schedule</string>
+    <string name="members_title">Members</string>
+    <string name="add_member_title">New member</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
 </resources>

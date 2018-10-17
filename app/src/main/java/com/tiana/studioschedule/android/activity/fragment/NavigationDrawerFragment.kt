@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.tiana.studioschedule.R
+import com.tiana.studioschedule.android.activity.MainActivity
 
 class NavigationDrawerFragment : Fragment() {
 
@@ -13,6 +14,14 @@ class NavigationDrawerFragment : Fragment() {
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_left_drawer, container, false)
+
+        view.findViewById<View>(R.id.layout_day_schedule_item).setOnClickListener {
+            (activity as MainActivity?)?.showDayScheduleFragment()
+        }
+        view.findViewById<View>(R.id.layout_members_item).setOnClickListener {
+            (activity as MainActivity?)?.showMembersFragment()
+        }
+
         return view
     }
 
